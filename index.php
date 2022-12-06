@@ -24,22 +24,35 @@
                 </div>
                 <div class="col-md-4">
                     <br>
-                    <form action="secciones/index.php" method="post">
+                    <form action="inicioSesion.php" method="post">
                     <div class="card">
                         <div class="card-header">
                             Inicio de sesión
+                            <hr>
+                            <?php 
+                            if(isset($_GET['error'])){
+                            ?>
+                            <p class="alert alert-danger" role="alert">
+                                <?php
+                                echo $_GET['error'];
+                                ?>
+                            </p>
+                            <?php
+                            }
+                            ?>
+                            <hr>
                         </div>
                         <div class="card-body">
 
                             <div class="mb-3">
                                 <label for="" class="form-label">Usuario</label>
-                                <input type="text" class="form-control" name="usuario" id="usuario" aria-describedby="helpId" placeholder="usuario">
+                                <input type="text" class="form-control" name="Usuario" id="Usuario" aria-describedby="helpId" placeholder="usuario">
                                 <small id="helpId" class="form-text text-muted">Ingrese su usuario</small>
                             </div>
 
                             <div class="mb-3">
                                 <label for="" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" name="contrasenia" id="contrasenia" aria-describedby="helpId" placeholder="contraseña">
+                                <input type="password" class="form-control" name="Clave" id="Clave" aria-describedby="helpId" placeholder="contraseña">
                                 <small id="helpId" class="form-text text-muted">Ingrese su contraseña</small>
                             </div>
 
