@@ -2,7 +2,7 @@
 
     session_start();
 
-    include_once('config/bd.php');
+    include_once('../config/bd.php');
 
 
     if( isset($_POST['Usuario']) && isset($_POST['Clave']) && isset($_POST['RClave']) && isset($_POST['Nombre_Completo']) ){
@@ -65,6 +65,5 @@
         header('Location: registro.php');
         exit();
     }
-
 
 ?>

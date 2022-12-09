@@ -2,7 +2,7 @@
 
 session_start();
 
-include('config/bd.php');
+include('../config/bd.php');
 
     
 
@@ -22,14 +22,14 @@ if( isset($_POST['Usuario']) && isset($_POST['Clave']) ){
 
 
     if(empty($Usuario)){
-        header("Location: index.php?error=El usuario es requerido");
+        header("Location: ../index.php?error=El usuario es requerido");
         exit();
     }else if(empty($Clave)){
-        header("Location: index.php?error=La clave es requerida");
+        header("Location: ../index.php?error=La clave es requerida");
         exit();
     }else{
 
-        //$Clave = md5($Clave);
+        $Clave = md5($Clave);
 
         $Sql = "SELECT * FROM usuarios WHERE Usuario = '$Usuario' AND Clave = '$Clave'";
 
@@ -42,20 +42,20 @@ if( isset($_POST['Usuario']) && isset($_POST['Clave']) ){
                 $_SESSION['Clave'] = $row['Clave'];
                 $_SESSION['Nombre_Completo'] = $row['Nombre_Completo'];
                 $_SESSION['Id'] = $row['Id'];
-                header("Location: secciones/index.php");
+                header("Location: ../secciones/index.php");
                 exit();
 
             }else{
-                header("Location: index.php?error=El usuario o la contraseña son incorrectos");
+                header("Location: ../index.php?error=El usuario o la contraseña son incorrectos");
                 exit();
             }
         }else{
-            header("Location: index.php?error=El usuario o la contraseña son incorrectos");
+            header("Location: ../index.php?error=El usuario o la contraseña son incorrectos");
             exit();
         }
     }
 }else{
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit();
 }
 

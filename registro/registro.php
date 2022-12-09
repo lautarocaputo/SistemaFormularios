@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+    <title>Formularios</title>
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.1 -->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 </head>
 
 <body>
     <header>
-        <!-- place navbar here -->
+    
     </header>
     <main>
         <div class="container">
@@ -85,7 +85,7 @@
 
                             <div class="d-grid gap-2">
                                 <button type="submit" name="registro" id="registro" class="btn btn-primary">Registrarse</button>
-                                <a href="index.php">Iniciar sesión</a>
+                                <a href="../index.php">Iniciar sesión</a>
                             </div>
                     </form>
 
@@ -96,12 +96,11 @@
 
             </div>
         </div>
-
     </main>
     <footer>
-        <!-- place footer here -->
+        
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
 
