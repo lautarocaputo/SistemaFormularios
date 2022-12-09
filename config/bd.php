@@ -4,7 +4,7 @@
     $User = "root";
     $pass = "";
 
-    $db = "iniciosesiondb";
+    $db = "sistemaformularios";
     
     $conexion = mysqli_connect($host, $User, $pass, $db);
 
