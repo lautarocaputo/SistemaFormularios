@@ -29,7 +29,7 @@ if( isset($_POST['Usuario']) && isset($_POST['Clave']) ){
         exit();
     }else{
 
-        $Clave = md5($Clave);
+        
 
         $Sql = "SELECT * FROM usuarios WHERE Usuario = '$Usuario' AND Clave = '$Clave'";
 
