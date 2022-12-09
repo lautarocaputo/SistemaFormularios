@@ -16,10 +16,10 @@
 <body>
 <nav class="navbar navbar-expand navbar-light bg-light">
                     <div class="nav navbar-nav">
-                        <a class="nav-item nav-link active" href="../secciones/index.php" aria-current="page">Formularios</a>
+                        <a class="nav-item nav-link active" >Formularios</a>
                         <a class="nav-item nav-link" href="vista_archivos.php">Archivos</a>
                         <a class="nav-item nav-link" href="vista_materiales.php">Materiales</a>
-                        <a class="nav-item nav-link" href="#">Cerrar sesión</a>
+                        <a class="nav-item nav-link" href="../index.php">Cerrar sesión</a>
                     </div>
                 </nav>
     <div class="container">

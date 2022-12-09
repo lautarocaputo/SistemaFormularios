@@ -29,7 +29,7 @@ if( isset($_POST['Usuario']) && isset($_POST['Clave']) ){
         exit();
     }else{
 
-        
+        //$Clave = md5($Clave);
 
         $Sql = "SELECT * FROM usuarios WHERE Usuario = '$Usuario' AND Clave = '$Clave'";
 
@@ -40,7 +40,7 @@ if( isset($_POST['Usuario']) && isset($_POST['Clave']) ){
             if($row['Usuario'] == $Usuario && $row['Clave'] == $Clave){
                 $_SESSION['Usuario'] = $row['Usuario'];
                 $_SESSION['Clave'] = $row['Clave'];
-                $_SESSION['Nombre completo'] = $row['Nombre_Completo'];
+                $_SESSION['Nombre_Completo'] = $row['Nombre_Completo'];
                 $_SESSION['Id'] = $row['Id'];
                 header("Location: secciones/index.php");
                 exit();
